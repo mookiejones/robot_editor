@@ -34,17 +34,68 @@
     <Reference Include="PresentationFramework">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="Classes\BackgroundRenderer.cs" />
+    <Compile Include="Classes\BookmarkBase.cs" />
+    <Compile Include="Classes\BracketHighlightRenderer.cs" />
+    <Compile Include="Classes\BracketSearchResult.cs" />
+    <Compile Include="Classes\CaretHighlightAdorner.cs" />
+    <Compile Include="Classes\CompletionContext.cs" />
+    <Compile Include="Classes\DefaultBracketSearcher.cs" />
+    <Compile Include="Classes\IconBarMargin.cs" />
+    <Compile Include="Classes\Location.cs" />
+    <Compile Include="CompletionItemListKeyResult.cs" />
+    <Compile Include="Interfaces\IBookmark.cs" />
+    <Compile Include="Interfaces\IBookmarkMargin.cs" />
+    <Compile Include="Interfaces\IBracketSearcher.cs" />
+    <Compile Include="Interfaces\ICompletionItem.cs" />
+    <Compile Include="Interfaces\ICompletionItemList.cs" />
+    <Compile Include="Interfaces\ICompletionListWindow.cs" />
+    <Compile Include="Interfaces\ICompletionWindow.cs" />
+    <Compile Include="Interfaces\IEditor.cs" />
+    <Compile Include="Interfaces\IEditorDocumentLine.cs" />
+    <Compile Include="Interfaces\IImage.cs" />
+    <Compile Include="Interfaces\IInsightItem.cs" />
+    <Compile Include="Interfaces\IInsightWindow.cs" />
+    <Compile Include="Interfaces\IOptions.cs" />
+    <Compile Include="Interfaces\ITextBuffer.cs" />
+    <Compile Include="Interfaces\ITextBufferVersion.cs" />
+    <Compile Include="Interfaces\ITextEditor.cs" />
+    <Compile Include="Interfaces\ITextEditorCaret.cs" />
+    <Compile Include="Interfaces\ITextEditorOptions.cs" />
+    <Compile Include="Options\EditorOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\RobotEditorControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
+    <None Include="Resources\ABBHighlight.xshd" />
+    <None Include="Resources\FANUCHighlight.xshd" />
+    <None Include="Resources\KAWASAKIHighlight.xshd" />
+    <None Include="Resources\KUKAHighlight.xshd" />
+    <None Include="Resources\NONEHighlight.xshd" />
+    <None Include="Resources\RobotbaseHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\ABBHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\FANUCHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\KAWASAKIHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\KUKAHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\NONEHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\RobotbaseHighlight.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxHighlighting\VBAHighlight.xshd" />
+    <None Include="Resources\VBAHighlight.xshd" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Resource Include="Resources\binoculars.png" />
+    <Resource Include="Resources\close.png" />
+    <Resource Include="Resources\collapsefolds.png" />
+    <Resource Include="Resources\folder_open.png" />
+    <Content Include="Resources\miRobotEditor.Resources.vxmethod_icon.png" />
+    <Content Include="Resources\tissystem+applications_folder.ico.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project=".paket\paket.targets" />
