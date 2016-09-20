@@ -1,0 +1,8 @@
+source https://www.nuget.org/api/v2/
+framework >= net45
+
+
+group Main
+source https://www.nuget.org/api/v2
+
+nuget AvalonEdit 5.0.3

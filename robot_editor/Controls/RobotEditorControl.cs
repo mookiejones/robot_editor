@@ -1,6 +1,6 @@
-﻿using System;
-using ICSharpCode.AvalonEdit;
-namespace robot_editor
+﻿using ICSharpCode.AvalonEdit;
+
+namespace robot_editor.Controls
 {
 	///
 	///
