@@ -15,6 +15,8 @@ namespace robot_editor.Interfaces
         IEditorDocumentLine GetLineForOffset(int offset);
         int PositionToOffset(int line, int column);
         Location OffsetToPosition(int offset);
+        string Filename { get; set; }
+        bool IsModified { get; set; }
 
         [Localizable(false)]
         void Insert(int offset, string text);
@@ -26,6 +28,7 @@ namespace robot_editor.Interfaces
         void EndUndoableAction();
         IDisposable OpenUndoGroup();
         ITextAnchor CreateAnchor(int offset);
+        void ReplaceAll();
     }
 
 }
